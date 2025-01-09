@@ -1,0 +1,320 @@
+body{
+  /* Fond et contour */
+  background-color: cornflowerblue;
+  border: 2px solid black;
+}
+
+#root{
+  /* Position des éléments internes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Wrapper{
+  /* Contour */
+  border: 2px solid rgb(0, 100, 0);
+
+  /* Centrage */
+  margin: auto;
+}
+
+/* Écran au-dessus des boutons */
+.screen{
+  /* Fond */
+  background-color: rgb(170, 170, 170);
+}
+
+/* Boite de boutons */
+.buttonBox{
+  /* Fond */
+  background-color: rgb(0, 100, 100);
+
+  /* Disposition des boutons */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+
+  /* Espace interne */
+  padding: 6px;
+}
+
+/* Boutons */
+button{
+  /* Fond et contour */
+  background-color: rgb(220, 220, 220);
+  border: transparent;
+  border-radius: 4px;
+
+  /* Taille */
+  width: 30px;
+  height: 30px;
+
+  /* Souris */
+  cursor: pointer;
+}
+
+/* Survol des boutons */
+button:hover{
+  background-color: rgb(180, 180, 180);
+}
+
+/* Bouton égal */
+.égal{
+  background-color: rgb(0, 130, 255);
+  grid-column: 3/5;
+}
+
+/* Survol du bouton égal */
+.égal:hover{
+  background-color: rgb(0, 80, 200);
+}
+
+/* Boutons d'opérations */
+.opération{
+  background-color: rgb(255, 120, 0);
+}
+
+/* Survol du bouton opérations */
+.opération:hover{
+  background-color: rgb(200, 100, 0);
+}
+
+/* VERSION TRÈS PETITE */
+@media all and (max-width: 344px) {
+
+  body{
+    /* Dimensions */
+    width: 100%;
+    height: 882px;
+
+    /* Centrage */
+    margin: auto;
+  }
+
+  #root{
+    /* Dimensions */
+    width: 100%;
+    height: 882px;
+
+    /* Centrage */
+    margin: auto;
+  }
+
+  /* Wrapper */
+  .Wrapper{
+    /* Dimensions */
+    width: 50%;
+  }
+
+  /* Écran */
+  .screen{
+    /* Dimensions */
+    height: 30px;
+
+    /* Texte */
+    font-size: 22px;
+
+    /* Position des éléments internes */
+    display: flex;
+    align-items: center;
+  }
+
+  /* Boite à boutons */
+  .buttonBox{
+    /* Dimensions */
+    height: 100%;
+
+    /* Position des boutons */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Boutons */
+  button{
+    /* Dimensions */
+    width: 20%;
+
+    /* Texte */
+    font-size: 18px;
+  } 
+}
+
+/* VERSION PETITE */
+@media all and (min-width: 345px) and (max-width: 540px)
+{
+  body{
+    /* Dimensions */
+    width: 100%;
+
+    /* Centrage */
+    margin: auto;
+  }
+
+  #root{
+    /* Dimensions */
+    width: 100%;
+  }
+
+  /* Wrapper */
+  .Wrapper{
+    /* Dimensions */
+    width: 40%;
+  }
+
+  /* Écran */
+  .screen{
+    /* Dimensions */
+    height: 30px;
+
+    /* Texte */
+    font-size: 16px;
+
+    /* Position des éléments internes */
+    display: flex;
+    align-items: center;
+  }
+
+  /* Boite à boutons */
+  .buttonBox{
+    /* Dimensions */
+    height: 100%;
+
+    /* Position des boutons */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Boutons */
+  button{
+    /* Dimensions */
+    width: 18%;
+
+    /* Texte */
+    font-size: 18px;
+  }
+}
+
+/* VERSION MOYENNE */
+@media all and (min-width: 541px) and (max-width: 912px)
+{
+  body{
+    /* Dimensions */
+    width: 100%;
+
+    /* Centrage */
+    margin: auto;
+  }
+
+  #root{
+    /* Dimensions */
+    width: 100%;
+    height: 676px;
+  }
+
+  /* Wrapper */
+  .Wrapper{
+    /* Dimensions */
+    width: 35%;
+    height: 80%;
+
+    /* Espace externe */
+    margin: 0;
+  }
+
+  /* Écran */
+  .screen{
+    /* Dimensions */
+    height: 30px;
+
+    /* Texte */
+    font-size: 30px;
+
+    /* Position des éléments internes */
+    display: flex;
+    align-items: center;
+  }
+
+  /* Boite à boutons */
+  .buttonBox{
+    /* Dimensions */
+    height: 100%;
+
+    /* Position des boutons */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Boutons */
+  button{
+    /* Dimensions */
+    width: 20%;
+    height: 50px;
+
+    /* Texte */
+    font-size: 26px;
+  }
+}
+
+/* VERSION GRANDE */
+@media all and (min-width: 913px) and (max-width: 1280px)
+{
+  body{
+    /* Dimensions */
+    width: 100%;
+
+    /* Centrage */
+    margin: auto;
+  }
+
+  #root{
+    /* Dimensions */
+    width: 100%;
+  }
+
+  /* Wrapper */
+  .Wrapper{
+    /* Dimensions */
+    width: 15%;
+    height: 90%;
+
+    /* Espace externe */
+    margin: 0;
+  }
+
+  /* Écran */
+  .screen{
+    /* Dimensions */
+    height: 30px;
+
+    /* Texte */
+    font-size: 20px;
+
+    /* Position des éléments internes */
+    display: flex;
+    align-items: center;
+  }
+
+  /* Boite à boutons */
+  .buttonBox{
+    /* Dimensions */
+    height: 100%;
+
+    /* Position des boutons */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Boutons */
+  button{
+    /* Dimensions */
+    width: 20%;
+
+    /* Texte */
+    font-size: 18px;
+  }
+}
